@@ -20,9 +20,11 @@ function deleteFromDriverByKey(driver, key) {
   console.log("the argument called key has a value of: ", key );
   const newdriver = Object.assign ({}, driver);
   console.log("newdriver is : ", newdriver );
+  console.log("type of newdriver is : ", typeof(newdriver) );
 
   delete newdriver.key;
-  console.log("newdriver is now : ", key );
+  console.log("newdriver is now : ", newdriver );
+  console.log("type of newdriver is now : ", typeof(newdriver) );
 
   return newdriver;
 }
